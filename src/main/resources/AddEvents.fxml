@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="addEventsAnchorPane" prefHeight="373.0" prefWidth="342.0">
+      <children>
+         <Label fx:id="pageName" layoutX="111.0" layoutY="22.0" text="Add an Event">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <Label fx:id="eventNameLabel" layoutX="56.0" layoutY="79.0" text="Event Name:" />
+         <TextField fx:id="eventNameText" layoutX="130.0" layoutY="74.0" prefHeight="26.0" prefWidth="160.0" />
+         <Label fx:id="eventDescLabel" layoutX="27.0" layoutY="122.0" text="Event Description:" />
+         <TextField fx:id="eventDescText" layoutX="130.0" layoutY="117.0" prefHeight="26.0" prefWidth="160.0" />
+         <Label fx:id="dayLabel" layoutX="34.0" layoutY="167.0" text="Day of the Week:" />
+         <ChoiceBox fx:id="dayChoiceBox" layoutX="130.0" layoutY="162.0" prefWidth="150.0" />
+         <Label fx:id="startLabel" layoutX="67.0" layoutY="209.0" text="Start Time:" />
+         <Spinner fx:id="startHour" layoutX="130.0" layoutY="206.0" prefHeight="26.0" prefWidth="70.0" />
+         <Label fx:id="colon" layoutX="204.0" layoutY="210.0" text=":" />
+         <Spinner fx:id="startMinute" layoutX="212.0" layoutY="206.0" prefHeight="26.0" prefWidth="70.0" />
+         <Label fx:id="durationLabel" layoutX="75.0" layoutY="251.0" text="Duration:" />
+         <Spinner fx:id="durationHour" layoutX="130.0" layoutY="248.0" prefHeight="26.0" prefWidth="70.0" />
+         <Label fx:id="colon2" layoutX="204.0" layoutY="252.0" text=":" />
+         <Spinner fx:id="durationMinute" layoutX="212.0" layoutY="248.0" prefHeight="26.0" prefWidth="70.0" />
+         <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="298.0" prefHeight="17.0" prefWidth="236.0" />
+         <Button fx:id="saveButton" layoutX="149.0" layoutY="325.0" mnemonicParsing="false" text="Save" />
+         <Button fx:id="cancelButton" layoutX="26.0" layoutY="325.0" mnemonicParsing="false" text="Cancel" />
+      </children></AnchorPane>
+</Scene>

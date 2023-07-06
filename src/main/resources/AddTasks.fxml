@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="addTasksAnchorPane" prefHeight="345.0" prefWidth="342.0">
+      <children>
+         <Label fx:id="pageName" layoutX="115.0" layoutY="22.0" text="Add a Task">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <Label fx:id="taskNameLabel" layoutX="61.0" layoutY="79.0" text="Task Name:" />
+         <TextField fx:id="taskNameText" layoutX="130.0" layoutY="74.0" prefHeight="26.0" prefWidth="160.0" />
+         <Label fx:id="taskDescLabel" layoutX="31.0" layoutY="122.0" text="Task Description:" />
+         <TextField fx:id="taskDescText" layoutX="130.0" layoutY="117.0" prefHeight="26.0" prefWidth="160.0" />
+         <Label fx:id="dayLabel" layoutX="34.0" layoutY="167.0" text="Day of the Week:" />
+         <ChoiceBox fx:id="dayChoiceBox" layoutX="130.0" layoutY="162.0" prefWidth="150.0" />
+         <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="245.0" prefHeight="20.0" prefWidth="236.0" />
+         <Button fx:id="saveButton" layoutX="149.0" layoutY="286.0" mnemonicParsing="false" text="Save" />
+         <CheckBox fx:id="completeBox" layoutX="130.0" layoutY="212.0" mnemonicParsing="false" />
+         <Label fx:id="completeLabel" layoutX="64.0" layoutY="212.0" text="Complete?:" />
+         <Button fx:id="cancelButton" layoutX="26.0" layoutY="287.0" mnemonicParsing="false" text="Cancel" />
+      </children></AnchorPane>
+</Scene>
